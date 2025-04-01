@@ -12,7 +12,7 @@ type Genre = {
     title: string;
 }
 
-type Review = {
+export type Review = {
     id: number;
     author: string;
     text: string;
