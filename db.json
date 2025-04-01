@@ -1,0 +1,68 @@
+{
+  "genres": [
+    {
+      "id": 1,
+      "title": "Historical"
+    },
+    {
+      "id": 2,
+      "title": "Fantasy"
+    },
+    {
+      "id": 3,
+      "title": "Mystery"
+    }
+  ],
+  "books": [
+    {
+      "id": 1,
+      "title": "The Good Earth",
+      "genreId": 1
+    },
+    {
+      "id": 2,
+      "title": "The Other Boleyn Girl",
+      "genreId": 1
+    },
+    {
+      "id": 3,
+      "title": "The Clue in the Diary",
+      "genreId": 3
+    },
+    {
+      "id": 4,
+      "title": "The Lord of the Rings",
+      "genreId": 2
+    }
+  ],
+  "reviews": [
+    {
+      "id": 1,
+      "author": "John",
+      "text": "A great read.  I couldn't put it down.",
+      "stars": 5,
+      "bookId": 1
+    },
+    {
+      "id": 2,
+      "author": "Mike",
+      "text": "Only read for a class.  It was alright.",
+      "stars": 3,
+      "bookId": 2
+    },
+    {
+      "id": 3,
+      "author": "Amy",
+      "text": "The characters make too many mistakes for drama.  Better than the movie, though.",
+      "stars": 4,
+      "bookId": 3
+    },
+    {
+      "author": "Test User",
+      "text": "This is a test review.",
+      "stars": 4,
+      "bookId": 1,
+      "id": 4
+    }
+  ]
+}
