@@ -1,31 +1,31 @@
 import "bootstrap/dist/css/bootstrap.min.css";
 
-// Ensure elements exist before using them
-const booksContainer = document.getElementById("books-container") as HTMLElement | null;
-const genresContainer = document.getElementById("genres-container") as HTMLElement | null;
-const genreIdTextbox = document.getElementById("genre-id-textbox") as HTMLInputElement | null;
-const reviewsContainer = document.getElementById("reviews-container") as HTMLElement | null;
-const reviewIdTextbox = document.getElementById("review-id-textbox") as HTMLInputElement | null;
-
-// Define Interfaces for Data Models
-interface Book {
+// Define data
+type Book = {
     id: number;
     title: string;
     genreId: number;
 }
 
-interface Genre {
+type Genre = {
     id: number;
     title: string;
 }
 
-interface Review {
+type Review = {
     id: number;
     author: string;
     text: string;
     stars: number;
     bookId: number;
 }
+
+// Ensure elements exist before using them
+const booksContainer = document.getElementById("books-container") as HTMLElement | null;
+const genresContainer = document.getElementById("genres-container") as HTMLElement | null;
+const genreIdTextbox = document.getElementById("genre-id-textbox") as HTMLInputElement | null;
+const reviewsContainer = document.getElementById("reviews-container") as HTMLElement | null;
+const reviewIdTextbox = document.getElementById("review-id-textbox") as HTMLInputElement | null;
 
 /***** Books *****/
 async function onFetchBooksClick(): Promise<void> {
